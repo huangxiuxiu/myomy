@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="luella">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="MY-O-MY series">
+    <meta name="author" content="luella">
+
+    <title>MY-O-MY | Series</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../jquery/ie-emulation-modes-warning.js"></script>
+    <style>
+      .wrap{
+        position: relative;
+      }
+      .wrap-video{
+        background:#000;
+      }
+      .home-main-video{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        height: auto;
+      }
+      .enter{
+        width: 270px;
+        margin: 0 auto 50px;
+        display: block;
+
+      }
+      .enterimg{
+        width: 270px;
+      }
+      .img{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+      }
+      .pos{
+        position: absolute;
+        bottom: 8%;
+        left: 0;
+        right: 0;
+        z-index: 2;
+      }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="wrap-video">
+        <video autoplay controls="controls" class="home-main-video" id="home-main-video" loop="loop" preload="auto" src="../images/video.mov">
+          Your browser does not support HTML5 video tags
+        </video>
+      </div>
+    </div>
+    <div class="pos">
+      <a class="enter" href="../index.html"><img class="enterimg" src="../images/enter.png" alt="enter"></a>
+      <a href="../index.html">
+        <img src="../images/myomy.png" class="img" alt="MY-O-MY">
+      </a>
+    </div>
+    
+  </body>
+  <script src="../jquery/jquery-1.11.3.min.js"></script>
+  <script>
+    $(function () {
+      changeDivHeight(0);
+      readyVideo();
+      var height = $(window).height();
+      
+      window.onresize=function(){  
+          var he = $('#home-main-video').height();
+          changeDivHeight(he); 
+      }
+      function readyVideo(){
+        document.getElementById('home-main-video').addEventListener('canplaythrough',function(){
+          var vheight = $(this).height();
+          $(this).show();
+          changeDivHeight(vheight);
+        });
+      }  
+      
+      function changeDivHeight(rize){               
+          var cheight = $(window).height(),
+              width = $(window).width();
+          scrollTop = rize>cheight?(rize - cheight):0;
+          $('.wrap-video').css({'width':width + 'px','height':cheight + 'px','overflow': 'hidden','position': 'absolute','top':'0','left':'0'});  
+          $('#home-main-video').css({'width':width + 'px','top':-scrollTop + 'px'});
+      }
+    })
+  </script>
+</html>

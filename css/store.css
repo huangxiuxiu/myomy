@@ -1,0 +1,287 @@
+.mainnav{
+  height:54px;
+}
+.container{
+  width: 90%;
+  margin-left: 5%;
+  margin:0 auto;
+}
+.screen_one .masthead{
+  padding: 0;
+  position: relative;
+}
+.screen_one .nav-justified li > a, .nav-justified li > a:hover, .nav-justified li > a:focus {
+    background-color: #000;
+}
+.screen_one .nav_line{
+  width:100%;
+  height:1px;
+  background-image: url(../images/nav_line.png);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.screen_one nav{
+  background: #000;
+}
+.screen_one .nav-justified{
+  background: #000;
+}
+.store .masthead{
+  padding: 6px 0;
+}
+.map{
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+  background: #000;
+  padding-left:6px;
+}
+.mapcontent{
+  margin: 0 auto;
+  position: relative;
+  /*max-height: 654px;
+  max-width: 1192px;*/
+}
+.mapcontent img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.map .map_pos{
+  display: block;
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+}
+.map .map_pos:visited{
+  color: #fff;
+}
+.map .map_pos i{
+  margin: 0 auto;
+  display: block;
+  background: url(../images/map_pos.png) no-repeat;
+  width: 26px;
+  height: 33px;
+}
+.map .map_pos p{
+  margin-top: -2px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 5px;
+  background: #000;
+}
+/* 图片宽高1192*654*/
+.map .china{
+  right: 14%;
+  top: 29.5%;
+}
+.map .korea{
+  right: 6%;
+  top: 20.6%; 
+}
+.map .singapore{
+  right: 6%;
+  top: 58.9%;
+}
+.map .malaysia{
+  right: 12.6%;
+  top: 81%;
+}
+.map .unitedstates{
+  left: 7.3%;
+  top: 21.1%;
+}
+.storeinfo{
+  height: 100%;
+}
+.store{
+  position: relative;
+  padding-top: 82px;
+}
+.imglist {
+  height: 100%;
+  margin-right: 400px;
+  overflow: hidden;
+}
+.imgwrap{
+  height: 100%;
+  width: 100%;
+} 
+.imgwrap img{
+  float: left;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+#store_pc .storelist{
+  float: right;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing:border-box;
+  box-sizing: border-box;
+  width: 400px;
+  height: 100%;
+  border:1px solid #e5e5e5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+.storelist ul{
+  color: #000;
+  width: 240px;
+  margin: 0 auto;
+}
+.storelist li{
+  padding-top: 10px;
+  background: url(../images/store_line.png) center top no-repeat;
+  cursor: pointer;
+}
+.storelist p{
+  line-height: 14px;
+  margin: 0 auto;
+  font-size: 14px!important;
+}
+.storelist p:first-child{
+  text-decoration: underline;
+  margin-bottom: 7px;
+}
+.storelist p:nth-child(2){
+  line-height: 12px;
+  font-size: 12px!important;
+}
+.storelist .tel{
+  margin: 14px 0 18px;
+  line-height: 14px;
+}
+.storelist .tel i{
+  display: inline-block;
+  margin-right: 4px;
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+  background: url(../images/store_tel.png) no-repeat;
+}
+
+
+/* 顶部菜单 */
+#store_tw .map{
+  display: -webkit-box;
+  -webkit-box-align:center;
+  width: 100%;
+  min-height: 200px;
+  padding-right:6px;
+ /* background: #000;*/
+ /* margin-bottom: 10px;*/
+}
+#store_tw .mapcontent{
+  margin: 0 auto;
+  position: relative;
+  max-height: 654px;
+  max-width: 1192px;
+}
+#store_tw .mapcontent img{
+  max-width: 100%;
+  max-height: 100%;
+}
+#store_tw .map .map_pos{
+  display: block;
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+}
+#store_tw .map .map_pos:visited{
+  color: #fff;
+}
+#store_tw .map .map_pos i{
+  margin: 0 auto;
+  display: block;
+  background: url(../images/map_pos.png) no-repeat;
+  width: 13px;
+  height: 17px;
+  -webkit-background-size: 13px 17px;
+  background-size: 13px 17px;
+}
+#store_tw .map .map_pos p{
+  margin-top: -2px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 5px;
+  background: #000;
+}
+/* 图片宽高1192*654*/
+#store_tw .map .china{
+  right: 14%;
+  top: 29.5%;
+}
+#store_tw .map .korea{
+  right: 6%;
+  top: 20.6%; 
+}
+#store_tw .map .singapore{
+  right: 6%;
+  top: 58.9%;
+}
+#store_tw .map .malaysia{
+  right: 12.6%;
+  top: 81%;
+}
+#store_tw .map .unitedstates{
+  left: 7.3%;
+  top: 21.1%;
+}
+
+
+#store_tw .storeitem img{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  min-height: 180px;
+}
+h3{
+  margin: 15px auto;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#store_tw .storelist{
+  text-align: center;
+}
+#store_tw .storelist ul{
+  color: #000;
+  width: 240px;
+  margin: 0 auto;
+}
+#store_tw .storelist li{
+  padding-top: 10px;
+  background: url(../images/store_line.png) center top no-repeat;
+}
+#store_tw .storelist p{
+  line-height: 14px;
+  margin: 0 auto;
+  font-size: 14px!important;
+}
+#store_tw .storelist p:first-child{
+  text-decoration: underline;
+  margin-bottom: 7px;
+}
+#store_tw .storelist p:nth-child(2){
+  line-height: 12px;
+  font-size: 12px!important;
+}
+#store_tw .storelist .tel{
+  margin: 14px 0 18px;
+  line-height: 14px;
+}
+#store_tw .storelist .tel i{
+  display: inline-block;
+  margin-right: 4px;
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+  background: url(../images/store_tel.png) no-repeat;
+}
+

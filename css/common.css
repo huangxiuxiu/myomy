@@ -1,0 +1,146 @@
+body{
+  font-family: SourceHanSansCN-ExtraLight;
+}
+ul,li{
+  list-style: none;
+      margin: 0;
+    padding: 0;
+}
+
+.nav-justified>li {
+    display: table-cell;
+    width: 1%;
+}
+.nav-log{
+  position: absolute;
+  top:0%;
+  height:54px;
+  width: 100%;
+  display: table;
+}
+.nav-log span{
+  display: table-cell;
+  vertical-align: middle;
+}
+.nav-log img{
+  vertical-align: middle;
+}
+.nav_line{
+  width:100%;
+  height:1px;
+  background-image: url(../images/nav_line.png);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+/*css for white nav*/
+.masthead{
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top:0%;
+  z-index: 1;
+  font-size: 18px;
+}
+img.masthead-brand{
+  width:12%;
+  padding-top: 7px;
+}
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 50px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  color: #bba60d;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+.masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+.social-wrap{
+    width: 280px;
+    height: 34px;
+    margin: 20px auto;
+    background: url('../images/social.jpg') no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.social-wrap a{
+  display: inline-block;
+  height: 34px;
+  width: 44px;
+}
+.social-wrap .youku{
+  width: 57px;
+}
+.social-wrap .facebook{
+  width: 40px;
+}
+.social-wrap .twitter{
+  width: 35px;
+}
+/*主导航*/
+.mainnav{
+  height: 82px;
+  position: fixed;
+  top: -82px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/*css for section*/
+.screen_bg{
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.bg-mast{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7); 
+  z-index:5;
+}
+/*字体*/
+@font-face { 
+font-family: SourceHanSansCN-ExtraLight; 
+src: url('../fonts/SourceHanSansCN-ExtraLight.otf'); 
+} 
+.f72{
+  font-size: 70px!important;
+}
+.f30{
+  font-size: 30px!important;
+}
+.f25{
+  font-size: 25px!important;
+}
+.f22{
+  font-size: 20px!important;
+}
+.f12{
+  font-size: 12px!important;
+}
